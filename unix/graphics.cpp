@@ -114,7 +114,7 @@ void S9xInitDisplay (int height)
 {
 	int width=256;
 
-	if (SDL_Init(SDL_INIT_JOYSTICK) < 0 ) 
+	if (SDL_Init(0))
 	{
 		printf("Could not initialize SDL(%s)\n", SDL_GetError());
 		S9xExit();
